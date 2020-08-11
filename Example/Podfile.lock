@@ -1,0 +1,16 @@
+PODS:
+  - WZIMProtocol (0.1.0)
+
+DEPENDENCIES:
+  - WZIMProtocol (from `../`)
+
+EXTERNAL SOURCES:
+  WZIMProtocol:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WZIMProtocol: a4f7ed8e8a2f11c900b70b279e8c37fa7f8e4f16
+
+PODFILE CHECKSUM: d5243573fbd7b054d0fe4293412eb4eb01cd778f
+
+COCOAPODS: 1.10.0.beta.1

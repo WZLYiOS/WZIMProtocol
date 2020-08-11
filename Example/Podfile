@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WZIMProtocol_Example' do
+  pod 'WZIMProtocol', :path => '../'
+
+  target 'WZIMProtocol_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
