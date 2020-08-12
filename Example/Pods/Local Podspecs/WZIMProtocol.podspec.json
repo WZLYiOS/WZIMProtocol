@@ -16,7 +16,16 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "WZIMProtocol/Classes/**/*"
+  "requires_arc": true,
+  "static_framework": true,
+  "swift_versions": "5.0",
+  "source_files": "WZIMProtocol/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+      "~> 5.0.1"
+    ]
+  },
+  "swift_version": "5.0"
 }

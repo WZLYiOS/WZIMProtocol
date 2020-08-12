@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6D5C6776E6AF7FC59B84255A /* Pods_WZIMProtocol_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488B7CE03FC5ECD6137633A /* Pods_WZIMProtocol_Example.framework */; };
+		D0084A8524E2A282003FF39B /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0084A8424E2A282003FF39B /* TestTableViewCell.swift */; };
 		EC3DB18106D0CF9B3FA276F2 /* Pods_WZIMProtocol_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0EA8BAF3FD91244B641E56 /* Pods_WZIMProtocol_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,12 +42,13 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7F9B78929B8DEF3443333FC4 /* Pods-WZIMProtocol_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZIMProtocol_Tests.release.xcconfig"; path = "Target Support Files/Pods-WZIMProtocol_Tests/Pods-WZIMProtocol_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9879143976B656754C13E660 /* Pods-WZIMProtocol_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZIMProtocol_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WZIMProtocol_Tests/Pods-WZIMProtocol_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9CF8083F811E78C98BBA59DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9CF8083F811E78C98BBA59DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BBA90D4A248593309EE2F0CA /* Pods-WZIMProtocol_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZIMProtocol_Example.release.xcconfig"; path = "Target Support Files/Pods-WZIMProtocol_Example/Pods-WZIMProtocol_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C4293C10F442DD92D4FB0C1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C4293C10F442DD92D4FB0C1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C66BCC2B09E3FC1D58126A0F /* Pods-WZIMProtocol_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZIMProtocol_Example.debug.xcconfig"; path = "Target Support Files/Pods-WZIMProtocol_Example/Pods-WZIMProtocol_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CC0EA8BAF3FD91244B641E56 /* Pods_WZIMProtocol_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WZIMProtocol_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E06B00E4A0E7762791547B00 /* WZIMProtocol.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WZIMProtocol.podspec; path = ../WZIMProtocol.podspec; sourceTree = "<group>"; };
+		D0084A8424E2A282003FF39B /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		E06B00E4A0E7762791547B00 /* WZIMProtocol.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WZIMProtocol.podspec; path = ../WZIMProtocol.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,6 @@
 				9879143976B656754C13E660 /* Pods-WZIMProtocol_Tests.debug.xcconfig */,
 				7F9B78929B8DEF3443333FC4 /* Pods-WZIMProtocol_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +108,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				D0084A8424E2A282003FF39B /* TestTableViewCell.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,11 +294,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WZIMProtocol_Example/Pods-WZIMProtocol_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WZIMProtocol/WZIMProtocol.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WZIMProtocol.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,6 +336,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				D0084A8524E2A282003FF39B /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
