@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/qiuqixiang/WZIMProtocol'
+  s.homepage         = 'https://github.com/WZLYiOS/WZIMProtocol'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'qiuqixiang' => '739140860@qq.com' }
-  s.source           = { :git => 'https://github.com/qiuqixiang/WZIMProtocol.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/WZLYiOS/WZIMProtocol.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
