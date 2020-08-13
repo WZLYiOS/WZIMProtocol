@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         $0.delegate = self
         $0.dataSource = self
         $0.estimatedRowHeight = 80
-        $0.rowHeight = UITableViewAutomaticDimension
+        $0.rowHeight = UITableView.automaticDimension
         $0.tableFooterView = UIView()
         $0.tableHeaderView = UIView()
         $0.register(TestTableViewCell.self, forCellReuseIdentifier: "TestTableViewCell")

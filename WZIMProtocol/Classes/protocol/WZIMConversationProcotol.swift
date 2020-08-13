@@ -40,7 +40,4 @@ public protocol WZIMConversationProcotol {
     
     /// 从服务端获取消息
     func wzGetMessage(cont: Int, last: WZIMMessageProtocol?, sucess: getMsgSucess, fail: fail)
-    
-    /// 获取用户资料，如果本地没有去服务器下载
-    func wzGetUserInfo(forceUpdate: Bool, comple: @escaping(_ info: WZIMUserInfoProtocol)-> Void)
 }

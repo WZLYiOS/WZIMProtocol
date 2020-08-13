@@ -41,9 +41,6 @@ public protocol WZIMMessageProtocol {
     /// 消息位置
     func wzLoaction() -> WZMessageLocation
     
-    /// 会话列表内容
-    func wzListContent() -> NSMutableAttributedString
-    
     /// 设置音频已读
     func wzSetCustomInt(param: Int)
     

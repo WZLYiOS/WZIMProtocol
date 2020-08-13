@@ -1,6 +1,6 @@
 PODS:
   - SnapKit (5.0.1)
-  - WZIMProtocol (0.1.0):
+  - WZIMProtocol (0.0.2):
     - SnapKit (~> 5.0.1)
 
 DEPENDENCIES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  WZIMProtocol: eb4b8807aab62f52f37c2d0a828a7a40927a81a2
+  WZIMProtocol: 6e30eef32d57a537b447ab1db32c154763f635d0
 
 PODFILE CHECKSUM: d5243573fbd7b054d0fe4293412eb4eb01cd778f
 
-COCOAPODS: 1.10.0.beta.1
+COCOAPODS: 1.9.3
