@@ -37,6 +37,7 @@ TODO: Add long description of the pod here.
 
   s.subspec "Core" do |ss|
     ss.source_files  = "WZIMProtocol/Classes/Procotol/*", "WZIMProtocol/Classes/UI/*"
+    ss.dependency 'SnapKit', '~> 5.0.1'
   end
 
   s.subspec "DisposeBag" do |ss|
@@ -45,9 +46,10 @@ TODO: Add long description of the pod here.
   
   s.subspec "UI" do |ss|
     ss.source_files = "WZIMProtocol/Classes/UI/*"
+    ss.dependency 'SnapKit', '~> 5.0.1'
   end
 
-  s.dependency 'SnapKit', '~> 5.0.1'
+  
   
   # s.resource_bundles = {
   #   'WZIMProtocol' => ['WZIMProtocol/Assets/*.png']

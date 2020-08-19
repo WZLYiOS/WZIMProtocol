@@ -22,18 +22,18 @@
     "ios": "10.0"
   },
   "default_subspecs": "Core",
-  "dependencies": {
-    "SnapKit": [
-      "~> 5.0.1"
-    ]
-  },
   "subspecs": [
     {
       "name": "Core",
       "source_files": [
         "WZIMProtocol/Classes/Procotol/*",
         "WZIMProtocol/Classes/UI/*"
-      ]
+      ],
+      "dependencies": {
+        "SnapKit": [
+          "~> 5.0.1"
+        ]
+      }
     },
     {
       "name": "DisposeBag",
@@ -41,7 +41,12 @@
     },
     {
       "name": "UI",
-      "source_files": "WZIMProtocol/Classes/UI/*"
+      "source_files": "WZIMProtocol/Classes/UI/*",
+      "dependencies": {
+        "SnapKit": [
+          "~> 5.0.1"
+        ]
+      }
     }
   ],
   "swift_version": "5.0"

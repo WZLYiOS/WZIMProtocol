@@ -1,7 +1,6 @@
 PODS:
   - SnapKit (5.0.1)
   - WZIMProtocol (0.0.6):
-    - SnapKit (~> 5.0.1)
     - WZIMProtocol/Core (= 0.0.6)
   - WZIMProtocol/Core (0.0.6):
     - SnapKit (~> 5.0.1)
@@ -19,7 +18,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  WZIMProtocol: cc28a172abb2dfaabb78934eaa51e40ec4c9b1f8
+  WZIMProtocol: efce80787e45fa5940024d5bc715d13b673aad0a
 
 PODFILE CHECKSUM: d5243573fbd7b054d0fe4293412eb4eb01cd778f
 
