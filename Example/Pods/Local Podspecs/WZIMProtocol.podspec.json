@@ -1,6 +1,6 @@
 {
   "name": "WZIMProtocol",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "summary": "IM通用协议",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/WZLYiOS/WZIMProtocol",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/WZLYiOS/WZIMProtocol.git",
-    "tag": "0.0.3"
+    "tag": "0.0.6"
   },
   "requires_arc": true,
   "static_framework": true,
@@ -21,11 +21,28 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "WZIMProtocol/Classes/**/*",
+  "default_subspecs": "Core",
   "dependencies": {
     "SnapKit": [
       "~> 5.0.1"
     ]
   },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "WZIMProtocol/Classes/Procotol/*",
+        "WZIMProtocol/Classes/UI/*"
+      ]
+    },
+    {
+      "name": "DisposeBag",
+      "source_files": "WZIMProtocol/Classes/Procotol/*"
+    },
+    {
+      "name": "UI",
+      "source_files": "WZIMProtocol/Classes/UI/*"
+    }
+  ],
   "swift_version": "5.0"
 }

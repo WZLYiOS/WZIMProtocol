@@ -33,7 +33,20 @@ TODO: Add long description of the pod here.
   s.swift_version         = '5.0'
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'WZIMProtocol/Classes/*.swift'
+  s.default_subspec = "Core"
+
+  s.subspec "Core" do |ss|
+    ss.source_files  = "WZIMProtocol/Classes/Procotol/*", "WZIMProtocol/Classes/UI/*"
+  end
+
+  s.subspec "DisposeBag" do |ss|
+    ss.source_files = "WZIMProtocol/Classes/Procotol/*"
+  end
+  
+  s.subspec "UI" do |ss|
+    ss.source_files = "WZIMProtocol/Classes/UI/*"
+  end
+
   s.dependency 'SnapKit', '~> 5.0.1'
   
   # s.resource_bundles = {
