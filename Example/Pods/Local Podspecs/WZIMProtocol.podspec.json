@@ -1,6 +1,6 @@
 {
   "name": "WZIMProtocol",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "summary": "IM通用协议",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/WZLYiOS/WZIMProtocol",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/WZLYiOS/WZIMProtocol.git",
-    "tag": "0.0.6"
+    "tag": "0.0.7"
   },
   "requires_arc": true,
   "static_framework": true,
@@ -36,7 +36,7 @@
       }
     },
     {
-      "name": "DisposeBag",
+      "name": "Procotol",
       "source_files": "WZIMProtocol/Classes/Procotol/*"
     },
     {
