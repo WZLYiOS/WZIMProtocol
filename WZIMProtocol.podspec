@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WZIMProtocol'
   s.version          = '0.0.7'
-  s.summary          = 'IM通用协议'
+  s.summary          = 'iM通用协议,'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -44,10 +44,10 @@ TODO: Add long description of the pod here.
     ss.source_files = "WZIMProtocol/Classes/Procotol/*"
   end
   
-  s.subspec "UI" do |ss|
-    ss.source_files = "WZIMProtocol/Classes/UI/*"
-    ss.dependency 'SnapKit', '~> 5.0.1'
-  end
+#  s.subspec "UI" do |ss|
+#    ss.source_files = "WZIMProtocol/Classes/UI/*"
+#    ss.dependency 'SnapKit', '~> 5.0.1'
+#  end
 
   
   
