@@ -40,7 +40,7 @@ TODO: Add long description of the pod here.
     ss.dependency 'SnapKit', '~> 5.0.1'
   end
 
-  s.subspec "DisposeBag" do |ss|
+  s.subspec "Procotol" do |ss|
     ss.source_files = "WZIMProtocol/Classes/Procotol/*"
   end
   
