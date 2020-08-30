@@ -1,16 +1,15 @@
 //
-//  WZIMTableViewCell.swift
-//  SweepTreasure
+//  WZIMBaseTableViewCell.swift
+//  Pods-WZIM_Example
 //
-//  Created by qiuqixiang on 2020/7/13.
-//  Copyright © 2020 划宝. All rights reserved.
+//  Created by qiuqixiang on 2020/8/24.
 //
 
 import UIKit
 import SnapKit
 
-// MARK - 气泡cell
-open class WZIMTableViewCell: UITableViewCell {
+// MARK - cell 基类
+open class WZIMBaseTableViewCell: UITableViewCell {
 
     /// 代理
     private weak var pDelegate: WZIMTableViewCellPublicDelegate!
@@ -46,7 +45,7 @@ open class WZIMTableViewCell: UITableViewCell {
     
     
     /// 底部内容视图，针对多个elem
-    private lazy var bottomStackView: UIStackView = {
+    public lazy var bottomStackView: UIStackView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.backgroundColor = UIColor.red
         $0.axis = .vertical
@@ -135,8 +134,6 @@ open class WZIMTableViewCell: UITableViewCell {
         /// 设置头像
         pDelegate.WZIMTableViewCell(cell: self, set: avatarImageView)
     }
-    
-    
 }
 
 // MARK - 图片九宫格

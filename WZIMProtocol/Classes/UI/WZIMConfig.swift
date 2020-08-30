@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK - 基础配置
-public enum WZIMConfig {
+public class WZIMConfig: NSObject {
     
     /// 左侧会话框
     public static var lelftBubbleImage: UIImage? = nil

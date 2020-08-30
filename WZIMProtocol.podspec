@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WZIMProtocol'
-  s.version          = '0.0.7'
+  s.version          = '1.0.0'
   s.summary          = 'iM通用协议,'
 
 # This description is used to generate tags and improve search results.
@@ -36,26 +36,20 @@ TODO: Add long description of the pod here.
   s.default_subspec = "Core"
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "WZIMProtocol/Classes/Procotol/*", "WZIMProtocol/Classes/UI/*"
+    ss.source_files = "WZIMProtocol/Classes/Procotol/*", "WZIMProtocol/Classes/UI/*"
     ss.dependency 'SnapKit', '~> 5.0.1'
   end
 
+  # 协议框架
   s.subspec "Procotol" do |ss|
     ss.source_files = "WZIMProtocol/Classes/Procotol/*"
   end
   
-#  s.subspec "UI" do |ss|
-#    ss.source_files = "WZIMProtocol/Classes/UI/*"
-#    ss.dependency 'SnapKit', '~> 5.0.1'
-#  end
+  # UI
+  s.subspec "UI" do |ss|
+    ss.source_files = "WZIMProtocol/Classes/UI/*"
+    ss.dependency 'SnapKit', '~> 5.0.1'
+  end
 
   
-  
-  # s.resource_bundles = {
-  #   'WZIMProtocol' => ['WZIMProtocol/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

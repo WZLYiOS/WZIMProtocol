@@ -62,26 +62,36 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension ViewController: WZIMTableViewCellDelegate, WZIMTableViewCellPublicDelegate {
-    func WZIMTableViewCell(cell: WZIMTableViewCell, tap avatarImageView: UIImageView) {
+    func WZIMTableViewCell(cell: WZIMBaseTableViewCell, tap avatarImageView: UIImageView) {
         
     }
     
-    func WZIMTableViewCell(cell: WZIMTableViewCell, menuTitle: String) {
+    func WZIMTableViewCell(cell: WZIMBaseTableViewCell, menuTitle: String) {
         debugPrint(menuTitle)
     }
     
-    func WZIMTableViewCell(cell: WZIMTableViewCell, set avatar: UIImageView) {
+    func WZIMTableViewCell(cell: WZIMBaseTableViewCell, set avatar: UIImageView) {
         
     }
 }
 
 extension ViewController: WZIMMessageProtocol {
-    func wzSetCustomInt(param: Int) {
-        
+    var wzCustomInt: Int {
+        get {
+            return 0
+        }
+        set(newValue) {
+            
+        }
     }
     
-    func wzCustomInt() -> Int {
-        return 1
+    var wzCustomData: Data {
+        get {
+            return Data()
+        }
+        set(newValue) {
+            
+        }
     }
     
     func wzStatus() -> WZIMMessageStatus {
